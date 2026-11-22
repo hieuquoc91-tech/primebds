@@ -18,7 +18,7 @@ window.AGENT = {
   tiktokHandle: "@prime.bds",
   area: "TP.HCM · Biên Hòa, Đồng Nai",
   intro:
-    "Tôi là Hiếu Quốc – PrimeBDS. Tôi đồng hành cùng khách hàng mua để ở và đầu tư căn hộ dự án Bcons tại TP.HCM và Đồng Nai. " +
+    "Tôi là Hiếu Quốc – PrimeBDS, với 15 năm kinh nghiệm trong lĩnh vực bất động sản và quản lý vận hành bất động sản. Tôi đồng hành cùng khách hàng mua để ở và đầu tư căn hộ dự án Bcons tại TP.HCM và Đồng Nai. " +
     "Mỗi căn tôi giới thiệu đều được kiểm tra pháp lý, so sánh giá và tính rõ dòng tiền trước khi anh chị xuống tiền.",
   avatar: "assets/img/avatar.jpg",  // Ảnh đại diện (logo tròn)
   portrait: "assets/img/portrait.jpg",
