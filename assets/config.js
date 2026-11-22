@@ -6,7 +6,7 @@ window.AGENT = {
   name: "Hiếu Quốc",                // Họ tên hiển thị
   brand: "PrimeBDS",                // Thương hiệu
   initials: "HQ",                   // Dùng khi không có ảnh đại diện
-  title: "PrimeBDS · Tư vấn căn hộ Bcons",
+  title: "PrimeBDS · 15 năm kinh nghiệm BĐS",
   slogan: "Chọn đúng căn — Đúng giá — Đúng thời điểm",
   phone: "0938474204",              // Số gọi điện
   phoneDisplay: "0938 474 204",

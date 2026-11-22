@@ -31,7 +31,7 @@
   .note{font-size:.8rem;color:var(--muted)}
   @media (max-width:900px){.reg{grid-template-columns:1fr}.reg-side{padding:110px 20px 36px;min-height:360px}.reg-main{padding:40px 16px 100px}.grid2{grid-template-columns:1fr}}
 </style>
-<script src="assets/config.js?v=9"></script>
+<script src="assets/config.js?v=10"></script>
 </head>
 <body>
 
@@ -82,6 +82,7 @@
         <div class="pills" id="proj">
           <label><input type="radio" name="project" value="Bcons Riverside (Q.8)" checked><span>Bcons Riverside · Q.8</span></label>
           <label><input type="radio" name="project" value="Bcons Central Park (Biên Hòa)"><span>Bcons Central Park · Biên Hòa</span></label>
+          <label><input type="radio" name="project" value="Conic Boulevard (Tân Nhựt)"><span>Conic Boulevard · sổ hồng</span></label>
           <label><input type="radio" name="project" value="Dự án khác"><span>Dự án khác</span></label>
           <label><input type="radio" name="project" value="Chưa chọn - cần tư vấn"><span>Cần tư vấn chọn</span></label>
         </div>
@@ -128,7 +129,7 @@
 <script>
   // Mở sẵn dự án theo link: dang-ky.html?du-an=central
   (function(){var q=new URLSearchParams(location.search).get("du-an")||"";
-    var map={riverside:0,central:1};var i=map[q.toLowerCase()];
+    var map={riverside:0,central:1,conic:2};var i=map[q.toLowerCase()];
     if(i!==undefined){document.querySelectorAll('#proj input')[i].checked=true;}})();
 </script>
 </body>

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conic Boulevard · Đã có sổ hồng · Giá từ 2,5 tỷ · {name}</title>
+<meta name="description" content="Căn hộ Conic Boulevard – đường Huỳnh Bá Chánh, Tân Nhựt, TP.HCM. Đã có sổ hồng, nhận nhà ở ngay, 2PN–3PN 84–114 m², giá từ 2,5 tỷ.">
+<meta property="og:image" content="assets/img/cn-render.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=5">
+<style>
+  .hero-cn{background:radial-gradient(900px 600px at 12% 80%,rgba(212,162,76,.18),transparent 60%),linear-gradient(135deg,#0b1f3a 0%,#0f2a4d 55%,#123459 100%)}
+  .hero-cn .hero-photo{position:absolute;top:0;right:0;bottom:0;width:min(46%,860px);overflow:hidden}
+  .hero-cn .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 60%;cursor:zoom-in}
+  .hero-cn .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#0f2a4d 0%,rgba(15,42,77,.55) 22%,transparent 50%)}
+  .hero-cn .container{position:relative;z-index:2}
+  .hero-cn .hero-text{max-width:600px}
+  .price-tag{position:absolute;z-index:2;right:32px;top:110px;background:rgba(11,31,58,.82);backdrop-filter:blur(6px);border:1px solid rgba(240,201,119,.4);border-radius:16px;padding:14px 20px;color:#fff}
+  .price-tag b{display:block;font-family:var(--serif);font-size:1.8rem;color:var(--gold-2);line-height:1.1}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chips span{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.86rem}
+  .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:34px}
+  .ov{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+  .ov small{color:var(--muted);display:block}
+  .ov b{font-size:1.1rem;color:var(--navy)}
+  .subnav{position:sticky;top:76px;z-index:40;background:rgba(246,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .subnav .container{display:flex;gap:24px;overflow-x:auto;padding:14px 0;font-size:.9rem;font-weight:600;white-space:nowrap;scrollbar-width:none}
+  .subnav a{color:var(--muted)}.subnav a:hover{color:var(--navy)}
+  .usp{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+  @media (max-width:900px){.usp{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.usp{grid-template-columns:1fr}}
+  .usp div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px}
+  .usp i{font-style:normal;font-size:1.8rem;display:block;margin-bottom:10px}
+  .usp b{display:block;font-size:1.1rem;margin-bottom:6px;color:var(--gold-2)}
+  .usp span{opacity:.75;font-size:.92rem}
+  .amen{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:26px}
+  .amen div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;font-weight:600;color:var(--navy)}
+  .amen i{font-style:normal;font-size:1.5rem;display:block;margin-bottom:6px}
+  .masterplan{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);margin-top:30px}
+  .masterplan img{border-radius:10px;width:100%;cursor:zoom-in}
+  @media (max-width:900px){
+    .hero-cn{align-items:flex-end}
+    .hero-cn .hero-photo{width:100%}
+    .hero-cn .hero-photo::before{background:linear-gradient(180deg,rgba(11,31,58,.35) 0%,rgba(11,31,58,.55) 40%,#0b1f3a 78%)}
+    .price-tag{display:none}
+  }
+</style>
+<script src="assets/config.js?v=10"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name"><span data-agent="name"></span><small data-agent="title"></small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="index.html#du-an">Dự án</a>
+      <a href="#vi-tri">Vị trí</a>
+      <a href="#tien-ich">Tiện ích</a>
+      <a href="#nha-mau">Nhà mẫu</a>
+      <a href="dang-ky.html?du-an=conic">Đăng ký</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold" data-tel>☎ <span data-agent="phoneDisplay"></span></a>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-cn">
+  <div class="hero-photo"><img src="assets/img/cn-boulevard.jpg?v=8" alt="Đại lộ hàng cọ nhìn từ căn hộ Conic Boulevard" data-lb="gal"></div>
+  <div class="price-tag reveal d3"><small>Giá chỉ từ</small><b>2,5 tỷ</b><small>Đã có sổ hồng</small></div>
+  <div class="container">
+    <div class="hero-text">
+      <span class="eyebrow reveal">Huỳnh Bá Chánh · Tân Nhựt · TP.HCM</span>
+      <h1 class="reveal d1">Conic <em>Boulevard</em></h1>
+      <p class="reveal d2">Căn hộ <b>đã có sổ hồng</b>, nhận nhà ở ngay. Diện tích rộng 84–114 m², 2–3 phòng ngủ, giá chỉ từ <b>2,5 tỷ</b>. Cách đại lộ Võ Văn Kiệt khoảng 500 m.</p>
+      <div class="chips reveal d2">
+        <span>📗 Đã có sổ hồng</span><span>🔑 Nhận nhà ở ngay</span><span>🌳 Mật độ xây dựng 28,7%</span>
+      </div>
+      <div class="hero-actions reveal d3">
+        <a href="dang-ky.html?du-an=conic" class="btn btn-gold">Nhận bảng giá căn sổ hồng →</a>
+        <a href="#thu-vien" class="btn btn-ghost">Xem hình ảnh</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">CUỘN XUỐNG<span></span></div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid count-group">
+      <div class="stat"><b><span data-count="2.5">0</span><sup> tỷ</sup></b><span>Giá chỉ từ</span></div>
+      <div class="stat"><b><span data-count="976">0</span></b><span>Căn hộ · 2 block A & B</span></div>
+      <div class="stat"><b><span data-count="15">0</span><sup> tầng</sup></b><span>Mỗi block · 1 tầng hầm</span></div>
+      <div class="stat"><b><span data-count="5.3">0</span><sup> ha</sup></b><span>Quy mô khu dân cư</span></div>
+    </div>
+  </div>
+</section>
+
+<nav class="subnav" style="margin-top:40px">
+  <div class="container">
+    <a href="#tong-quan">Tổng quan</a><a href="#noi-bat">Điểm nổi bật</a><a href="#thu-vien">Hình ảnh</a><a href="#vi-tri">Vị trí</a><a href="#tien-ich">Tiện ích</a><a href="#nha-mau">Nhà mẫu 3PN</a><a href="#thuc-te">Căn thực tế</a><a href="#tinh-vay">Tính vay</a><a href="#lien-he">Liên hệ</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<section class="section" id="tong-quan">
+  <div class="container">
+    <span class="eyebrow">Thông tin tổng quan</span>
+    <h2 class="reveal">Căn hộ rộng, sổ hồng sẵn,<br>giá dễ tiếp cận</h2>
+    <p class="lead reveal d1">Conic Boulevard là khu căn hộ cao tầng nằm trong khu dân cư quy mô 5,3 ha trên đường Huỳnh Bá Chánh, gồm 2 block A & B và khu nhà phố liền kề, nhiều mảng xanh và công viên.</p>
+    <div class="overview">
+      <div class="ov reveal"><small>Vị trí</small><b>Đường Huỳnh Bá Chánh, xã Tân Nhựt (Tân Kiên cũ), TP.HCM</b></div>
+      <div class="ov reveal d1"><small>Chủ đầu tư</small><b>Lĩnh Phong – Conic</b></div>
+      <div class="ov reveal d2"><small>Tổng diện tích</small><b>53.051 m² (≈ 5,3 ha)</b></div>
+      <div class="ov reveal d3"><small>Quy mô</small><b>2 block A & B · 15 tầng · 1 tầng hầm</b></div>
+      <div class="ov reveal"><small>Sản phẩm</small><b>≈ 976 căn hộ, shophouse · 114 nhà liền kề</b></div>
+      <div class="ov reveal d1"><small>Loại căn</small><b>2PN – 3PN · 84 – 114 m²</b></div>
+      <div class="ov reveal d2"><small>Mật độ xây dựng</small><b>28,7%</b></div>
+      <div class="ov reveal d3"><small>Pháp lý</small><b>Đã có sổ hồng · nhận nhà ở ngay</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section dark" id="noi-bat">
+  <div class="container">
+    <span class="eyebrow">Điểm nổi bật</span>
+    <h2 class="reveal">Vì sao nên chọn Conic Boulevard</h2>
+    <div class="usp">
+      <div class="reveal"><i>📗</i><b>Đã có sổ hồng</b><span>Pháp lý rõ ràng, sang tên công chứng được, vay ngân hàng thuận lợi.</span></div>
+      <div class="reveal d1"><i>🔑</i><b>Nhận nhà ở ngay</b><span>Dự án đã hoàn thiện và bàn giao — xem đúng căn mình mua, không chờ xây.</span></div>
+      <div class="reveal d2"><i>📐</i><b>Diện tích rộng</b><span>Căn 84–114 m², 2–3 phòng ngủ — rộng hơn nhiều so với căn hộ cùng tầm giá.</span></div>
+      <div class="reveal d3"><i>🌳</i><b>Mật độ thấp, nhiều cây xanh</b><span>Mật độ xây dựng 28,7%, công viên nội khu, đường nội bộ hàng cọ.</span></div>
+      <div class="reveal"><i>💰</i><b>Giá từ 2,5 tỷ</b><span>Mức giá dễ tiếp cận cho căn hộ đã có sổ tại TP.HCM.</span></div>
+      <div class="reveal d1"><i>🛣️</i><b>Kết nối nhanh</b><span>Gần Võ Văn Kiệt, QL1A, Nguyễn Văn Linh — đi Q.6, Q.5, Q.7 thuận tiện.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="thu-vien">
+  <div class="container section-head">
+    <div><span class="eyebrow">Hình ảnh dự án</span><h2 class="reveal">Kéo ngang để xem dự án</h2></div>
+    <div class="hs-nav"><button data-hs="#gal" data-dir="prev" aria-label="Trước">←</button><button data-hs="#gal" data-dir="next" aria-label="Sau">→</button></div>
+  </div>
+  <div class="hscroll" id="gal">
+    <figure><img data-lb="gal" src="assets/img/cn-render.jpg" alt="Phối cảnh tổng thể 2 block A & B"><figcaption>Phối cảnh 2 block A & B</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-boulevard.jpg" alt="Đại lộ hàng cọ nhìn từ căn hộ" loading="lazy"><figcaption>Đại lộ hàng cọ</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-aerial.jpg" alt="Toàn cảnh khu vực từ trên cao" loading="lazy"><figcaption>Toàn cảnh khu vực</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-garden.jpg" alt="Cảnh quan nội khu" loading="lazy"><figcaption>Cảnh quan nội khu</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-view.jpg" alt="View từ ban công" loading="lazy"><figcaption>View từ ban công</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-street.jpg" alt="Đường nội khu" loading="lazy"><figcaption>Đường nội khu</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cn-open.jpg" alt="Nhà mẫu 3 phòng ngủ" loading="lazy"><figcaption>Nhà mẫu 3PN</figcaption></figure>
+  </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+  <img src="assets/img/cn-aerial.jpg" alt="">
+  <div class="container reveal">
+    <span class="eyebrow">Sổ hồng sẵn · Nhận nhà ngay</span>
+    <h2>Căn hộ rộng cho gia đình<br>chỉ từ 2,5 tỷ</h2>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="vi-tri">
+  <div class="container loc-grid">
+    <div>
+      <span class="eyebrow">Vị trí & kết nối</span>
+      <h2 class="reveal">Cửa ngõ Tây Nam,<br>đi trung tâm thuận tiện</h2>
+      <p class="lead reveal d1">Nằm trên đường Huỳnh Bá Chánh, liền kề QL1A, kết nối nhanh với đại lộ Võ Văn Kiệt, Nguyễn Văn Linh và cao tốc TP.HCM – Trung Lương.</p>
+      <ul class="loc-list reveal d2">
+        <li><span>Đại lộ Võ Văn Kiệt</span><b>≈ 500 m</b></li>
+        <li><span>Quốc lộ 1A</span><b>Liền kề</b></li>
+        <li><span>Chợ đầu mối Bình Điền</span><b>≈ 6,2 km</b></li>
+        <li><span>Chợ Bình Tây (Q.6)</span><b>≈ 8 km</b></li>
+        <li><span>Phú Mỹ Hưng (Q.7)</span><b>≈ 8 km</b></li>
+        <li><span>Chợ Bến Thành (Q.1)</span><b>≈ 15,8 km</b></li>
+        <li><span>Trung tâm hành chính, bệnh viện, trường học, TTTM</span><b>2 – 5 km</b></li>
+      </ul>
+    </div>
+    <div class="loc-imgs reveal d1">
+      <img data-lb="loc" src="assets/img/cn-masterplan.jpg" alt="Mặt bằng tổng thể khu dân cư Conic Boulevard" loading="lazy" style="aspect-ratio:auto;object-fit:contain;background:#fff">
+      <img data-lb="loc" src="assets/img/cn-render.jpg" alt="Phối cảnh 2 block" loading="lazy">
+      <img data-lb="loc" src="assets/img/cn-aerial.jpg" alt="Toàn cảnh khu vực" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section" id="tien-ich" style="background:#efe9dc">
+  <div class="container">
+    <span class="eyebrow">Tiện ích</span>
+    <h2 class="reveal">Sống xanh, đủ đầy ngay trong khu</h2>
+    <p class="lead reveal d1">Mật độ xây dựng chỉ 28,7% — phần lớn diện tích dành cho công viên, mảng xanh và tiện ích chung.</p>
+    <div class="amen reveal d2">
+      <div><i>🌳</i>Công viên & mảng xanh</div>
+      <div><i>🌴</i>Đường nội khu hàng cọ</div>
+      <div><i>🧸</i>Trường mầm non</div>
+      <div><i>☕</i>Clubhouse cà phê</div>
+      <div><i>🛝</i>Khu vui chơi trẻ em</div>
+      <div><i>🏋️</i>Gym ngoài trời</div>
+      <div><i>⚽</i>Sân thể thao ngoài trời</div>
+      <div><i>🏪</i>Shophouse dưới chân tòa</div>
+      <div><i>🅿️</i>Tầng hầm để xe</div>
+    </div>
+    <div class="masterplan reveal">
+      <img data-lb="mp" src="assets/img/cn-masterplan.jpg" alt="Mặt bằng tổng thể: chung cư A, chung cư B, nhà phố và công viên" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- SHOW UNIT -->
+<section class="section" id="nha-mau">
+  <div class="container section-head">
+    <div><span class="eyebrow">Nhà mẫu 3 phòng ngủ · 114 m²</span><h2 class="reveal">Không gian cho cả gia đình</h2></div>
+    <div class="hs-nav"><button data-hs="#nm" data-dir="prev" aria-label="Trước">←</button><button data-hs="#nm" data-dir="next" aria-label="Sau">→</button></div>
+  </div>
+  <div class="hscroll" id="nm">
+    <figure><img data-lb="nm" src="assets/img/cn-living.jpg" alt="Phòng khách" loading="lazy"><figcaption>Phòng khách</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-open.jpg" alt="Không gian mở bếp – ăn" loading="lazy"><figcaption>Không gian mở bếp – ăn</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-dining.jpg" alt="Phòng ăn" loading="lazy"><figcaption>Phòng ăn</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-kitchen.jpg" alt="Bếp" loading="lazy"><figcaption>Bếp</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-living-2.jpg" alt="Phòng khách nhìn từ bếp" loading="lazy"><figcaption>Phòng khách rộng</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-bed-1.jpg" alt="Phòng ngủ master" loading="lazy"><figcaption>Phòng ngủ master</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-bed-2.jpg" alt="Phòng ngủ 2" loading="lazy"><figcaption>Phòng ngủ 2</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-bed-3.jpg" alt="Phòng ngủ trẻ em" loading="lazy"><figcaption>Phòng ngủ trẻ em</figcaption></figure>
+    <figure><img data-lb="nm" src="assets/img/cn-bath.jpg" alt="Phòng tắm" loading="lazy"><figcaption>Phòng tắm</figcaption></figure>
+  </div>
+</section>
+
+<!-- REAL UNITS -->
+<section class="section dark" id="thuc-te">
+  <div class="container">
+    <span class="eyebrow">Căn hộ thực tế</span>
+    <h2 class="reveal">Hình ảnh căn bàn giao thực tế</h2>
+    <p class="lead reveal d1">Ảnh và video do chính <span data-agent="name"></span> quay khi dẫn khách đi xem — căn bàn giao hoàn thiện cơ bản, sàn gạch bóng, phòng ngủ lót sàn gỗ.</p>
+  </div>
+  <div class="marquee" style="margin-top:34px">
+    <div class="marquee-track">
+      <img data-lb="tt" src="assets/img/cn-real-living.jpg" alt="Phòng khách căn bàn giao" loading="lazy">
+      <img data-lb="tt" src="assets/img/cn-real-1.jpg" alt="Bếp căn bàn giao" loading="lazy">
+      <img data-lb="tt" src="assets/img/cn-view.jpg" alt="View ban công" loading="lazy">
+      <img data-lb="tt" src="assets/img/cn-real-2.jpg" alt="Khu bếp căn bàn giao" loading="lazy">
+      <img data-lb="tt" src="assets/img/cn-real-kitchen.jpg" alt="Bếp và lô gia" loading="lazy">
+      <img data-lb="tt" src="assets/img/p-conic.jpg?v=8" alt="Phòng khách căn 3PN" loading="lazy">
+      <img data-lb="tt" src="assets/img/cn-garden.jpg" alt="Cảnh quan nhìn từ căn hộ" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="section" id="tinh-vay">
+  <div class="container">
+    <span class="eyebrow">Công cụ</span>
+    <h2 class="reveal">Tính nhanh khoản vay</h2>
+    <p class="lead reveal d1" style="margin-bottom:30px">Căn đã có sổ hồng nên vay ngân hàng thế chấp trực tiếp bằng sổ. Số liệu tạm tính để tham khảo.</p>
+    <div class="calc reveal" id="calc" data-first="30">
+      <div class="calc-in">
+        <label><span>Giá căn hộ <output id="o-price"></output></span><input id="c-price" type="range" min="2.5" max="5" step="0.05" value="2.5"></label>
+        <label><span>Tỷ lệ vay <output id="o-loan"></output></span><input id="c-loan" type="range" min="0" max="70" step="5" value="70"></label>
+        <label><span>Thời gian vay <output id="o-years"></output></span><input id="c-years" type="range" min="5" max="25" step="1" value="20"></label>
+        <label><span>Lãi suất <output id="o-rate"></output></span><input id="c-rate" type="range" min="5" max="12" step="0.1" value="8"></label>
+      </div>
+      <div class="calc-out">
+        <div class="row"><span>Giá căn tạm tính</span><b id="r-price"></b></div>
+        <div class="row"><span>Vốn tự có</span><b id="r-own"></b></div>
+        <div class="row"><span>Khoản vay ngân hàng</span><b id="r-loan"></b></div>
+        <div style="display:none"><b id="r-first"></b></div>
+        <div><small>Trả góp mỗi tháng (gốc + lãi)</small><div class="big" id="r-pmt"></div><small>Lãi suất thực tế tùy ngân hàng và thời điểm.</small></div>
+        <a href="dang-ky.html?du-an=conic" class="btn btn-gold" style="justify-self:start">Nhận phương án tài chính chi tiết</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="lien-he">
+  <div class="container contact">
+    <div>
+      <span class="eyebrow">Nhận bảng giá</span>
+      <h2 class="reveal">Danh sách căn sổ hồng<br>đang bán</h2>
+      <p class="lead reveal d1">Để lại số điện thoại — tôi gửi danh sách căn kèm tầng, hướng, giá và hẹn lịch đi xem căn thực tế.</p>
+      <div class="agent-line reveal d2">
+        <span class="brand-mark"></span>
+        <div><b data-agent="name"></b><a data-tel style="color:var(--gold-2);font-weight:700">☎ <span data-agent="phoneDisplay"></span></a><br><a data-zalo style="opacity:.85">Zalo: <span data-agent="zaloDisplay"></span></a></div>
+      </div>
+    </div>
+    <form class="form reveal d1">
+      <h3>Đăng ký xem căn Conic Boulevard</h3>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="hidden" name="project" value="Conic Boulevard (Tân Nhựt)">
+      <input type="text" name="name" placeholder="Họ và tên" required>
+      <input type="tel" name="phone" placeholder="Số điện thoại" required pattern="[0-9 +.]{9,15}">
+      <select name="unit">
+        <option>Quan tâm căn 2PN</option><option>Quan tâm căn 3PN</option>
+      </select>
+      <select name="purpose">
+        <option>Mua để ở</option><option>Mua đầu tư cho thuê</option><option>Đặt lịch xem căn thực tế</option>
+      </select>
+      <button class="btn btn-gold" type="submit">Gửi & nhận danh sách căn →</button>
+      <div class="ok"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><b data-agent="name"></b> · <span data-agent="brand"></span><br><span data-agent="title"></span></div>
+    <div><b>Liên hệ</b><br>Gọi: <a data-tel data-agent="phoneDisplay"></a><br>Zalo: <a data-zalo data-agent="zaloDisplay"></a><br><a data-mail data-agent="email"></a></div>
+    <div><b>Dự án</b><br><a href="bcons-riverside.html">Bcons Riverside</a><br><a href="bcons-central-park.html">Bcons Central Park</a><br><a href="conic-boulevard.html">Conic Boulevard</a></div>
+    <p class="disc">© <span class="year"></span> <span data-agent="name"></span> – <span data-agent="brand"></span>, tư vấn độc lập. Thông số dự án tổng hợp từ thông tin công bố của chủ đầu tư và báo chí; giá và tình trạng căn có thể thay đổi, vui lòng liên hệ để nhận thông tin chính xác từng căn. Ảnh phối cảnh và mặt bằng tổng thể: nguồn chủ đầu tư/CafeLand.</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="zalo" data-zalo aria-label="Nhắn Zalo">Zalo</a>
+  <a class="call" data-tel aria-label="Gọi điện">☎</a>
+</div>
+
+<script src="assets/main.js?v=4"></script>
+</body>
+</html>
