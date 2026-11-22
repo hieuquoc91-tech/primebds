@@ -11,9 +11,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css?v=5">
 <style>
-  .hero-split{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
-  .hero-card{border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);transform:rotate(2deg);border:6px solid rgba(255,255,255,.12)}
-  .hero-card img{aspect-ratio:3/4;object-fit:cover;width:100%;animation:none}
+  /* Hero: nền navy sắc nét + ảnh tòa tháp hiển thị gần đúng kích thước gốc (không kéo giãn) */
+  .hero-rv{background:radial-gradient(900px 600px at 12% 80%,rgba(212,162,76,.18),transparent 60%),linear-gradient(135deg,#0b1f3a 0%,#0f2a4d 55%,#123459 100%)}
+  .hero-rv .hero-photo{position:absolute;top:0;right:0;bottom:0;width:min(46%,860px);overflow:hidden}
+  .hero-rv .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 35%;cursor:zoom-in}
+  .hero-rv .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#0f2a4d 0%,rgba(15,42,77,.55) 22%,transparent 50%)}
+  .hero-rv .container{position:relative;z-index:2}
+  .hero-rv .hero-text{max-width:600px}
+  .hero-rv .price-tag{position:absolute;z-index:2;right:32px;top:110px;background:rgba(11,31,58,.82);backdrop-filter:blur(6px);border:1px solid rgba(240,201,119,.4);border-radius:16px;padding:14px 20px;color:#fff}
+  .hero-rv .price-tag b{display:block;font-family:var(--serif);font-size:1.8rem;color:var(--gold-2);line-height:1.1}
+  @media (max-width:900px){
+    .hero-rv{align-items:flex-end}
+    .hero-rv .hero-photo{width:100%}
+    .hero-rv .hero-photo::before{background:linear-gradient(180deg,rgba(11,31,58,.35) 0%,rgba(11,31,58,.55) 40%,#0b1f3a 78%)}
+    .hero-rv .price-tag{display:none}
+  }
   .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
   .chips span{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.86rem}
   .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;margin-top:34px}
@@ -23,7 +35,6 @@
   .subnav{position:sticky;top:76px;z-index:40;background:rgba(246,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .subnav .container{display:flex;gap:24px;overflow-x:auto;padding:14px 0;font-size:.9rem;font-weight:600;white-space:nowrap;scrollbar-width:none}
   .subnav a{color:var(--muted)}.subnav a:hover{color:var(--navy)}
-  @media (max-width:900px){.hero-split{grid-template-columns:1fr}.hero-card{display:none}}
 </style>
 <script src="assets/config.js?v=6"></script>
 </head>
@@ -52,10 +63,11 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"><img src="assets/img/river-tower.jpg" alt="Bcons Riverside bên sông"></div>
-  <div class="container hero-split">
-    <div>
+<section class="hero hero-rv">
+  <div class="hero-photo"><img src="assets/img/hero-tower.jpg?v=7" alt="Phối cảnh Bcons Riverside bên sông" data-lb="gal"></div>
+  <div class="price-tag reveal d3"><small>Giá chỉ từ</small><b>1,73 tỷ</b><small>1PN · 36 m²</small></div>
+  <div class="container">
+    <div class="hero-text">
       <span class="eyebrow reveal">Căn hộ ven sông · Quận 8</span>
       <h1 class="reveal d1">Bcons <em>Riverside</em></h1>
       <p class="reveal d2">Phú Định, Quận 8 — sát Võ Văn Kiệt, đi nhanh Quận 5, Quận 6, Quận 1. Chỉ <b>169 căn</b>, giá chỉ từ <b>1,73 tỷ</b>.</p>
@@ -67,7 +79,6 @@
         <a href="#thu-vien" class="btn btn-ghost">Xem hình ảnh</a>
       </div>
     </div>
-    <div class="hero-card reveal d2"><img src="assets/img/hero-tower.jpg" alt="Phối cảnh Bcons Riverside" data-lb="gal"></div>
   </div>
   <div class="scroll-hint">CUỘN XUỐNG<span></span></div>
 </section>
