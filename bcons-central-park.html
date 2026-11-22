@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bcons Central Park Biên Hòa · Tâm điểm trái tim Biên Hòa · {name}</title>
+<meta name="description" content="Bcons Central Park – 236 Phan Trung, Tam Hiệp, Biên Hòa, Đồng Nai. 5 tháp 22 tầng, 2.820 căn hộ, 60 tiện ích. Chiết khấu đến 8,5%, cam kết thuê lại đến 15 triệu/tháng.">
+<meta property="og:image" content="assets/img/cp-night.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=5">
+<style>
+  .hero-split{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+  .hero-card{border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);transform:rotate(2deg);border:6px solid rgba(255,255,255,.12)}
+  .hero-card img{aspect-ratio:1/1;object-fit:cover;width:100%}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chips span{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.86rem}
+  .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:34px}
+  .ov{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+  .ov small{color:var(--muted);display:block}
+  .ov b{font-size:1.1rem;color:var(--navy)}
+  .subnav{position:sticky;top:76px;z-index:40;background:rgba(246,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .subnav .container{display:flex;gap:24px;overflow-x:auto;padding:14px 0;font-size:.9rem;font-weight:600;white-space:nowrap;scrollbar-width:none}
+  .subnav a{color:var(--muted)}.subnav a:hover{color:var(--navy)}
+  .rent{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+  .rent div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:26px}
+  .rent b{font-family:var(--serif);font-size:2.4rem;color:var(--gold-2);display:block;line-height:1.1}
+  .rent small{opacity:.7}
+  @media (max-width:900px){.hero-split{grid-template-columns:1fr}.hero-card{display:none}.rent{grid-template-columns:1fr}}
+</style>
+<script src="assets/config.js?v=6"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name"><span data-agent="name"></span><small data-agent="title"></small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="index.html#du-an">Dự án</a>
+      <a href="#vi-tri">Vị trí</a>
+      <a href="#tien-ich">Tiện ích</a>
+      <a href="#chinh-sach">Chính sách</a>
+      <a href="dang-ky.html?du-an=central">Đăng ký</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold" data-tel>☎ <span data-agent="phoneDisplay"></span></a>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="assets/img/cp-night.jpg" alt="Bcons Central Park về đêm"></div>
+  <div class="container hero-split">
+    <div>
+      <span class="eyebrow reveal">Biên Hòa · Đồng Nai</span>
+      <h1 class="reveal d1">Bcons <em>Central Park</em></h1>
+      <p class="reveal d2">Tâm điểm giữa trái tim Biên Hòa — 236 đường Phan Trung, phường Tam Hiệp. 5 tháp 22 tầng, 2.820 căn hộ, 60 tiện ích nội khu.</p>
+      <div class="chips reveal d2">
+        <span>🎁 Chiết khấu đến 8,5%</span><span>🏠 Cam kết thuê lại đến 15 tr/tháng</span><span>🏦 Lãi suất cố định 6,9%</span>
+      </div>
+      <div class="hero-actions reveal d3">
+        <a href="dang-ky.html?du-an=central" class="btn btn-gold">Nhận bảng giá →</a>
+        <a href="#thu-vien" class="btn btn-ghost">Xem hình ảnh</a>
+      </div>
+    </div>
+    <div class="hero-card reveal d2"><img src="assets/img/cp-tower.jpg" alt="Phối cảnh Bcons Central Park" data-lb="gal"></div>
+  </div>
+  <div class="scroll-hint">CUỘN XUỐNG<span></span></div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid count-group">
+      <div class="stat"><b><span data-count="2820">0</span></b><span>Căn hộ chung cư</span></div>
+      <div class="stat"><b><span data-count="5">0</span><sup> tháp</sup></b><span>Cao 22 tầng · 2 hầm</span></div>
+      <div class="stat"><b><span data-count="60">0</span></b><span>Tiện ích nội khu</span></div>
+      <div class="stat"><b><span data-count="2.6">0</span><sup> tỷ</sup></b><span>Giá tham khảo / căn</span></div>
+    </div>
+  </div>
+</section>
+
+<nav class="subnav" style="margin-top:40px">
+  <div class="container">
+    <a href="#tong-quan">Tổng quan</a><a href="#thu-vien">Hình ảnh</a><a href="#vi-tri">Vị trí</a><a href="#tien-ich">Tiện ích</a><a href="#san-pham">Sản phẩm</a><a href="#noi-that">Nội thất</a><a href="#chinh-sach">Chính sách</a><a href="#tinh-vay">Tính vay</a><a href="#lien-he">Liên hệ</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<section class="section" id="tong-quan">
+  <div class="container">
+    <span class="eyebrow">Thông tin tổng quan</span>
+    <h2 class="reveal">Đón đầu động lực tăng trưởng<br>của TP. Đồng Nai</h2>
+    <p class="lead reveal d1">Kế thừa hệ tiện ích, thương mại và cộng đồng dân cư đã phát triển lâu đời của Biên Hòa; đón đầu sân bay Long Thành và hạ tầng liên vùng. Dự án của Tập đoàn Bcons — 23 dự án bất động sản, 13 dự án bàn giao vượt tiến độ, 10 dự án đã có sổ hồng — cùng đối tác Nhật Bản Mercuria Việt Nam.</p>
+    <div class="overview">
+      <div class="ov reveal"><small>Vị trí</small><b>236 Phan Trung, P. Tam Hiệp, TP. Đồng Nai</b></div>
+      <div class="ov reveal d1"><small>Chủ đầu tư</small><b>Tập đoàn Bcons</b></div>
+      <div class="ov reveal d2"><small>Diện tích toàn khu</small><b>27.455,7 m²</b></div>
+      <div class="ov reveal d3"><small>Quy mô</small><b>5 tháp · 22 tầng · 2 hầm · 2 tầng shopping mall</b></div>
+      <div class="ov reveal"><small>Sản phẩm</small><b>2.820 căn hộ · 113 căn TMDV</b></div>
+      <div class="ov reveal d1"><small>Mật độ xây dựng</small><b>Khối đế 38,05% · Khối tháp 35,99%</b></div>
+      <div class="ov reveal d2"><small>Loại căn</small><b>Studio · 1PN · 2PN · 3PN</b></div>
+      <div class="ov reveal d3"><small>Dự kiến bàn giao</small><b>Quý II/2029</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="thu-vien" style="padding-top:20px">
+  <div class="container section-head">
+    <div><span class="eyebrow">Phối cảnh dự án</span><h2 class="reveal">Kéo ngang để xem dự án</h2></div>
+    <div class="hs-nav"><button data-hs="#gal" data-dir="prev" aria-label="Trước">←</button><button data-hs="#gal" data-dir="next" aria-label="Sau">→</button></div>
+  </div>
+  <div class="hscroll" id="gal">
+    <figure><img data-lb="gal" src="assets/img/cp-night.jpg" alt="Toàn cảnh về đêm"><figcaption>Toàn cảnh về đêm</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-render-1.jpg" alt="Phối cảnh 5 tháp" loading="lazy"><figcaption>Phối cảnh 5 tháp</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-pool.jpg" alt="Hồ bơi nội khu" loading="lazy"><figcaption>Hồ bơi nội khu</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-render-2.jpg" alt="Mặt tiền Phan Trung" loading="lazy"><figcaption>Mặt tiền dự án</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-garden.jpg" alt="Công viên giữa các tháp" loading="lazy"><figcaption>Công viên trung tâm</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-view.jpg" alt="View về TP.HCM" loading="lazy"><figcaption>View hướng TP.HCM</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-square.jpg" alt="Quảng trường nhạc nước" loading="lazy"><figcaption>Quảng trường nhạc nước</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-mall.jpg" alt="Khu thương mại" loading="lazy"><figcaption>Khu thương mại hơn 13.000 m²</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/cp-tower.jpg" alt="Tòa tháp" loading="lazy"><figcaption>Tòa tháp</figcaption></figure>
+  </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+  <img src="assets/img/cp-pool.jpg" alt="">
+  <div class="container reveal">
+    <span class="eyebrow">Phan Trung · Biên Hòa</span>
+    <h2>Giữa nhịp sống đô thị,<br>một khoảng xanh để trở về</h2>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="vi-tri">
+  <div class="container loc-grid">
+    <div>
+      <span class="eyebrow">Vị trí & hạ tầng</span>
+      <h2 class="reveal">Trung tâm của trái tim Biên Hòa</h2>
+      <p class="lead reveal d1">Đường Phan Trung là trục trung tâm Biên Hòa — nơi tập trung thương mại, hành chính và tiện ích lâu đời.</p>
+      <ul class="loc-list reveal d2">
+        <li><span>Vincom Plaza · bệnh viện · rạp chiếu phim · phố ẩm thực</span><b>Quanh dự án</b></li>
+        <li><span>Công viên, hệ thống trường học các cấp</span><b>Quanh dự án</b></li>
+        <li><span>AEON Mall Biên Hòa</span><b>Kết nối</b></li>
+        <li><span>Trung tâm hành chính TP. Đồng Nai mới</span><b>Kết nối</b></li>
+        <li><span>Khu đô thị Cù Lao Phố (Sun Group) · đô thị ven sông</span><b>Phát triển</b></li>
+        <li><span>Metro Bến Thành – Suối Tiên nối dài đến sân bay Long Thành (44,5 km)</span><b>Quy hoạch</b></li>
+        <li><span>Sân bay quốc tế Long Thành</span><b>Động lực</b></li>
+      </ul>
+    </div>
+    <div class="loc-imgs reveal d1">
+      <img data-lb="loc" src="assets/img/cp-view.jpg" alt="Dự án trên trục Phan Trung" loading="lazy">
+      <img data-lb="loc" src="assets/img/cp-infra.jpg" alt="Hạ tầng metro và sân bay" loading="lazy">
+      <img data-lb="loc" src="assets/img/cp-render-1.jpg" alt="Phối cảnh khu vực" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section dark" id="tien-ich">
+  <div class="container">
+    <span class="eyebrow">60 tiện ích nội khu</span>
+    <h2 class="reveal">Sống, chơi, mua sắm<br>ngay dưới chân nhà</h2>
+    <div class="pay-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:30px">
+      <div class="pay reveal" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:#fff"><span class="n">01</span><b>Hồ bơi resort</b><span style="opacity:.7">Hồ bơi tràn, khu thư giãn, cây xanh nhiệt đới.</span></div>
+      <div class="pay reveal d1" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:#fff"><span class="n">02</span><b>Quảng trường nhạc nước</b><span style="opacity:.7">Không gian sự kiện, gặp gỡ cộng đồng.</span></div>
+      <div class="pay reveal d2" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:#fff"><span class="n">03</span><b>Shopping mall</b><span style="opacity:.7">2 tầng thương mại, hơn 13.000 m².</span></div>
+      <div class="pay reveal d3" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);color:#fff"><span class="n">04</span><b>Công viên & thể thao</b><span style="opacity:.7">Khu vui chơi trẻ em, sân bóng, cung đường đi bộ.</span></div>
+    </div>
+  </div>
+  <div class="marquee" style="margin-top:50px">
+    <div class="marquee-track">
+      <img data-lb="ti" src="assets/img/cp-pool.jpg" alt="Hồ bơi" loading="lazy">
+      <img data-lb="ti" src="assets/img/cp-square.jpg" alt="Quảng trường nhạc nước" loading="lazy">
+      <img data-lb="ti" src="assets/img/cp-amenity.jpg" alt="Khu vui chơi, sân bóng, đường đi bộ" loading="lazy">
+      <img data-lb="ti" src="assets/img/cp-mall.jpg" alt="Shopping mall" loading="lazy">
+      <img data-lb="ti" src="assets/img/cp-garden.jpg" alt="Công viên" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="san-pham">
+  <div class="container mix">
+    <div>
+      <span class="eyebrow">Sản phẩm</span>
+      <h2 class="reveal">Đa dạng diện tích<br>từ Studio đến 3PN</h2>
+      <p class="lead reveal d1">Diện tích căn hộ từ 37 m² đến 88 m², phù hợp người trẻ mua căn đầu tiên, gia đình và nhà đầu tư cho thuê.</p>
+      <a href="dang-ky.html?du-an=central" class="btn btn-dark" style="margin-top:24px">Xin mặt bằng & căn trống →</a>
+    </div>
+    <div class="bars" style="color:var(--ink)">
+      <div class="bar-row"><span>Studio<small style="opacity:1;color:var(--muted)">1WC</small></span><div class="track" style="background:#e8e2d4"><div class="fill" data-w="45"></div></div><span class="num">37–40 m²</span></div>
+      <div class="bar-row"><span>1PN<small style="opacity:1;color:var(--muted)">1WC</small></span><div class="track" style="background:#e8e2d4"><div class="fill" data-w="48"></div></div><span class="num">42 m²</span></div>
+      <div class="bar-row p2"><span>2PN<small style="opacity:1;color:var(--muted)">1WC</small></span><div class="track" style="background:#e8e2d4"><div class="fill" data-w="60"></div></div><span class="num">50–53 m²</span></div>
+      <div class="bar-row p2"><span>2PN<small style="opacity:1;color:var(--muted)">2WC</small></span><div class="track" style="background:#e8e2d4"><div class="fill" data-w="84"></div></div><span class="num">53–74 m²</span></div>
+      <div class="bar-row"><span>3PN<small style="opacity:1;color:var(--muted)">2WC</small></span><div class="track" style="background:#e8e2d4"><div class="fill" data-w="100"></div></div><span class="num">87–88 m²</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERIOR -->
+<section class="section" id="noi-that" style="padding-top:20px">
+  <div class="container section-head">
+    <div><span class="eyebrow">Thiết kế & nội thất</span><h2 class="reveal">Căn hộ hoàn thiện tinh tế</h2></div>
+    <div class="hs-nav"><button data-hs="#int" data-dir="prev" aria-label="Trước">←</button><button data-hs="#int" data-dir="next" aria-label="Sau">→</button></div>
+  </div>
+  <div class="hscroll" id="int">
+    <figure><img data-lb="int" src="assets/img/cp-int-3.jpg" alt="Phòng khách & bếp" loading="lazy"><figcaption>Phòng khách & bếp</figcaption></figure>
+    <figure><img data-lb="int" src="assets/img/cp-int-1.jpg" alt="Nội thất căn hộ" loading="lazy"><figcaption>Nội thất căn hộ</figcaption></figure>
+    <figure><img data-lb="int" src="assets/img/cp-int-2.jpg" alt="Phòng ngủ & WC" loading="lazy"><figcaption>Phòng ngủ & WC</figcaption></figure>
+  </div>
+</section>
+
+<!-- POLICY -->
+<section class="section" id="chinh-sach" style="background:#efe9dc">
+  <div class="container">
+    <span class="eyebrow">Phương thức thanh toán</span>
+    <h2 class="reveal">Linh hoạt theo dòng tiền</h2>
+    <div class="pay-grid" style="margin-top:30px">
+      <div class="pay reveal"><span class="n">01</span><b>Thanh toán theo tiến độ</b><span style="color:var(--muted)">Thanh toán 20% ký hợp đồng mua bán, các đợt tiếp theo giãn đều theo tiến độ; 25% khi bàn giao, 5% khi nhận sổ.</span><b style="color:#b3541e;font-size:1.3rem">Chiết khấu 8,5%</b></div>
+      <div class="pay reveal d1"><span class="n">02</span><b>Vay ngân hàng – hỗ trợ lãi suất</b><span style="color:var(--muted)">Khách thanh toán 5% các đợt đầu, ngân hàng giải ngân. CĐT hỗ trợ lãi suất & ân hạn nợ gốc từ ngày giải ngân đến khi nhận nhà (tối đa 24 tháng).</span><b style="color:#b3541e;font-size:1.3rem">Chiết khấu 2,45%</b></div>
+      <div class="pay reveal d2"><span class="n">03</span><b>Lãi suất cố định 6,9%/năm</b><span style="color:var(--muted)">CĐT hỗ trợ đóng phần lãi chênh lệch khi vượt 6,9%/năm, tối đa 4 năm (không quá 24 tháng kể từ khi nhận nhà).</span><b style="color:#b3541e;font-size:1.3rem">An tâm dòng tiền</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="container">
+    <span class="eyebrow">Chính sách cam kết thuê lại</span>
+    <h2 class="reveal">Có thu nhập cho thuê<br>ngay 2 năm đầu</h2>
+    <p class="lead reveal d1">Chủ đầu tư cam kết thuê lại căn hộ trong 2 năm. Nếu không nhận cam kết thuê, khách được giảm thêm 4% vào giá.</p>
+    <div class="rent count-group">
+      <div class="reveal"><small>Studio & 1PN</small><b><span data-count="12">0</span> tr/tháng</b><small>≈ 288 triệu / 2 năm</small></div>
+      <div class="reveal d1"><small>2 phòng ngủ</small><b><span data-count="14">0</span> tr/tháng</b><small>≈ 336 triệu / 2 năm</small></div>
+      <div class="reveal d2"><small>3 phòng ngủ</small><b><span data-count="15">0</span> tr/tháng</b><small>≈ 360 triệu / 2 năm</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="section" id="tinh-vay">
+  <div class="container">
+    <span class="eyebrow">Công cụ</span>
+    <h2 class="reveal">Tính nhanh khoản vay</h2>
+    <p class="lead reveal d1" style="margin-bottom:30px">Số liệu tạm tính để tham khảo, chưa trừ chiết khấu. Giá chính xác theo bảng giá từng căn.</p>
+    <div class="calc reveal" id="calc" data-first="5">
+      <div class="calc-in">
+        <label><span>Giá căn hộ <output id="o-price"></output></span><input id="c-price" type="range" min="1.5" max="5" step="0.05" value="2.6"></label>
+        <label><span>Tỷ lệ vay <output id="o-loan"></output></span><input id="c-loan" type="range" min="0" max="70" step="5" value="50"></label>
+        <label><span>Thời gian vay <output id="o-years"></output></span><input id="c-years" type="range" min="5" max="25" step="1" value="20"></label>
+        <label><span>Lãi suất <output id="o-rate"></output></span><input id="c-rate" type="range" min="5" max="12" step="0.1" value="6.9"></label>
+      </div>
+      <div class="calc-out">
+        <div class="row"><span>Giá căn tạm tính</span><b id="r-price"></b></div>
+        <div class="row"><span>Đợt đầu 5%</span><b id="r-first"></b></div>
+        <div class="row"><span>Vốn tự có</span><b id="r-own"></b></div>
+        <div class="row"><span>Khoản vay ngân hàng</span><b id="r-loan"></b></div>
+        <div><small>Trả góp mỗi tháng (gốc + lãi)</small><div class="big" id="r-pmt"></div><small>Chưa tính hỗ trợ lãi suất / ân hạn nợ gốc và tiền thuê lại.</small></div>
+        <a href="dang-ky.html?du-an=central" class="btn btn-gold" style="justify-self:start">Nhận phương án tài chính chi tiết</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="lien-he">
+  <div class="container contact">
+    <div>
+      <span class="eyebrow">Nhận bảng giá</span>
+      <h2 class="reveal">Bảng giá & căn đẹp<br>Bcons Central Park</h2>
+      <p class="lead reveal d1">Để lại số điện thoại — tôi gửi bảng giá, mặt bằng căn trống và tính dòng tiền theo từng chính sách.</p>
+      <div class="agent-line reveal d2">
+        <span class="brand-mark"></span>
+        <div><b data-agent="name"></b><a data-tel style="color:var(--gold-2);font-weight:700">☎ <span data-agent="phoneDisplay"></span></a><br><a data-zalo style="opacity:.8">Zalo: <span data-agent="zaloDisplay"></span></a></div>
+      </div>
+    </div>
+    <form class="form reveal d1">
+      <h3>Đăng ký nhận bảng giá</h3>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="hidden" name="project" value="Bcons Central Park (Biên Hòa)">
+      <input type="text" name="name" placeholder="Họ và tên" required>
+      <input type="tel" name="phone" placeholder="Số điện thoại" required pattern="[0-9 +.]{9,15}">
+      <select name="unit">
+        <option>Quan tâm Studio</option><option>Quan tâm 1PN</option><option>Quan tâm 2PN</option><option>Quan tâm 3PN</option>
+      </select>
+      <select name="purpose">
+        <option>Mua để ở</option><option>Đầu tư – nhận cam kết thuê lại</option><option>Đặt lịch xem nhà mẫu</option>
+      </select>
+      <button class="btn btn-gold" type="submit">Gửi & nhận bảng giá →</button>
+      <div class="ok"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><b data-agent="name"></b> · <span data-agent="brand"></span><br><span data-agent="title"></span></div>
+    <div><b>Liên hệ</b><br>Gọi: <a data-tel data-agent="phoneDisplay"></a><br>Zalo: <a data-zalo data-agent="zaloDisplay"></a><br><a data-mail data-agent="email"></a></div>
+    <div><b>Dự án</b><br><a href="bcons-riverside.html">Bcons Riverside</a><br><a href="bcons-central-park.html">Bcons Central Park</a><br><a data-tiktok>TikTok <span data-agent="tiktokHandle"></span></a></div>
+    <p class="disc">© <span class="year"></span> <span data-agent="name"></span> – <span data-agent="brand"></span>, tư vấn độc lập. Hình ảnh phối cảnh, giá và chính sách theo tài liệu chủ đầu tư tại thời điểm đăng, có thể thay đổi. Vui lòng liên hệ để nhận bảng giá và chính sách chính thức.</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="zalo" data-zalo aria-label="Nhắn Zalo">Zalo</a>
+  <a class="call" data-tel aria-label="Gọi điện">☎</a>
+</div>
+
+<script src="assets/main.js?v=5"></script>
+</body>
+</html>
