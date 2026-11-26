@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Norton Park · Gamuda Land · Thuận Giao · {name}</title>
+<meta name="description" content="Norton Park – A Gamuda Land Community tại Đại lộ Bình Dương, Thuận Giao, TP.HCM. 7,9 ha, 6 tháp 19 tầng, mật độ xây dựng 20%, liền kề AEON Mall, đối diện sân golf Sông Bé.">
+<meta property="og:image" content="assets/img/np-hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=5">
+<style>
+  .hero-np{background:radial-gradient(900px 600px at 12% 80%,rgba(212,162,76,.18),transparent 60%),linear-gradient(135deg,#1f2a22 0%,#2b3a2e 55%,#33463a 100%)}
+  .hero-np .hero-photo{position:absolute;top:0;right:0;bottom:0;width:min(46%,860px);overflow:hidden}
+  .hero-np .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;cursor:zoom-in}
+  .hero-np .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#2b3a2e 0%,rgba(43,58,46,.55) 22%,transparent 50%)}
+  .hero-np .container{position:relative;z-index:2}
+  .hero-np .hero-text{max-width:600px}
+  .price-tag{position:absolute;z-index:2;right:32px;top:110px;background:rgba(31,42,34,.85);backdrop-filter:blur(6px);border:1px solid rgba(240,201,119,.4);border-radius:16px;padding:14px 20px;color:#fff}
+  .price-tag b{display:block;font-family:var(--serif);font-size:1.6rem;color:var(--gold-2);line-height:1.1}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chips span{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.86rem}
+  .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:34px}
+  .ov{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+  .ov small{color:var(--muted);display:block}
+  .ov b{font-size:1.05rem;color:var(--navy)}
+  .subnav{position:sticky;top:76px;z-index:40;background:rgba(246,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .subnav .container{display:flex;gap:24px;overflow-x:auto;padding:14px 0;font-size:.9rem;font-weight:600;white-space:nowrap;scrollbar-width:none}
+  .subnav a{color:var(--muted)}.subnav a:hover{color:var(--navy)}
+  .usp{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+  .usp div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px}
+  .usp i{font-style:normal;font-size:1.8rem;display:block;margin-bottom:10px}
+  .usp b{display:block;font-size:1.1rem;margin-bottom:6px;color:var(--gold-2)}
+  .usp span{opacity:.75;font-size:.92rem}
+  @media (max-width:900px){.usp{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.usp{grid-template-columns:1fr}}
+  .zones{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+  .zone{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+  .zone img{width:100%;aspect-ratio:16/9;object-fit:cover;cursor:zoom-in}
+  .zone div{padding:20px}
+  .zone h3{font-size:1.25rem;margin-bottom:8px}
+  .zone ul{padding-left:18px;color:var(--muted);font-size:.9rem;display:grid;gap:4px}
+  @media (max-width:900px){.zones{grid-template-columns:1fr}}
+  .time-list{display:grid;gap:14px;margin-top:20px}
+  .time-list div{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+  .time-list b{font-family:var(--serif);font-size:1.3rem;color:var(--gold);line-height:1.1}
+  .time-list b small{display:block;font-family:var(--sans);font-size:.72rem;color:var(--muted)}
+  .time-list span{font-size:.92rem;color:var(--ink)}
+  .units{width:100%;border-collapse:collapse;margin-top:20px;background:#fff;border-radius:14px;overflow:hidden;font-size:.92rem}
+  .units th,.units td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}
+  .units th{background:var(--navy);color:#fff;font-weight:600}
+  .wide img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);cursor:zoom-in}
+  @media (max-width:900px){
+    .hero-np{align-items:flex-end}
+    .hero-np .hero-photo{width:100%}
+    .hero-np .hero-photo::before{background:linear-gradient(180deg,rgba(31,42,34,.35) 0%,rgba(31,42,34,.55) 40%,#1f2a22 78%)}
+    .price-tag{display:none}
+  }
+</style>
+<script src="assets/config.js?v=10"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name"><span data-agent="name"></span><small data-agent="title"></small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="index.html#du-an">Dự án</a>
+      <a href="#vi-tri">Vị trí</a>
+      <a href="#tien-ich">Tiện ích</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="dang-ky.html?du-an=norton">Đăng ký</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-gold" data-tel>☎ <span data-agent="phoneDisplay"></span></a>
+      <button class="menu-btn" aria-label="Mở menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-np">
+  <div class="hero-photo"><img src="assets/img/np-tower.jpg" alt="Phối cảnh tòa tháp Norton Park" data-lb="gal"></div>
+  <div class="price-tag reveal d3"><small>Chủ đầu tư</small><b>Gamuda Land</b><small>Bàn giao dự kiến Q3/2029</small></div>
+  <div class="container">
+    <div class="hero-text">
+      <span class="eyebrow reveal">A Gamuda Land Community · Thuận Giao</span>
+      <h1 class="reveal d1">Norton <em>Park</em></h1>
+      <p class="reveal d2">Tinh chọn chuẩn sống toàn cầu tại phía Bắc TP.HCM — trên Đại lộ Bình Dương, <b>liền kề AEON Mall</b>, đối diện sân golf Sông Bé, cách KCN VSIP 1 chỉ 5–10 phút.</p>
+      <div class="chips reveal d2">
+        <span>🌳 Mật độ xây dựng 20%</span><span>🌿 2,5 ha cảnh quan</span><span>🛍️ Liền kề AEON Mall</span>
+      </div>
+      <div class="hero-actions reveal d3">
+        <a href="dang-ky.html?du-an=norton" class="btn btn-gold">Nhận bảng giá & chính sách →</a>
+        <a href="#thu-vien" class="btn btn-ghost">Xem phối cảnh</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">CUỘN XUỐNG<span></span></div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid count-group">
+      <div class="stat"><b><span data-count="7.9">0</span><sup> ha</sup></b><span>Diện tích phát triển</span></div>
+      <div class="stat"><b><span data-count="1286">0</span></b><span>Sản phẩm</span></div>
+      <div class="stat"><b><span data-count="6">0</span><sup> tháp</sup></b><span>19 tầng · 1 tầng hầm</span></div>
+      <div class="stat"><b><span data-count="20">0</span><sup>%</sup></b><span>Mật độ xây dựng</span></div>
+    </div>
+  </div>
+</section>
+
+<nav class="subnav" style="margin-top:40px">
+  <div class="container">
+    <a href="#tong-quan">Tổng quan</a><a href="#noi-bat">Điểm nổi bật</a><a href="#thu-vien">Phối cảnh</a><a href="#vi-tri">Vị trí</a><a href="#tien-ich">Tiện ích</a><a href="#san-pham">Sản phẩm</a><a href="#thanh-toan">Thanh toán</a><a href="#tinh-vay">Tính vay</a><a href="#lien-he">Liên hệ</a>
+  </div>
+</nav>
+
+<!-- OVERVIEW -->
+<section class="section" id="tong-quan">
+  <div class="container">
+    <span class="eyebrow">Tổng quan dự án</span>
+    <h2 class="reveal">Một chốn an yên tầm quốc tế<br>giữa lòng Bình Dương sôi động</h2>
+    <p class="lead reveal d1">Norton Park là dự án flagship của Gamuda Land tại phía Bắc TP.HCM, tiếp nối Eaton Park ở phía Đông. Quy hoạch theo cụm tháp, cảnh quan rừng nhiệt đới đa tầng "Forestscape", dành cho cộng đồng chuyên gia và gia đình có phong cách sống quốc tế.</p>
+    <div class="overview">
+      <div class="ov reveal"><small>Chủ đầu tư</small><b>Gamuda Land (Malaysia)</b></div>
+      <div class="ov reveal d1"><small>Vị trí</small><b>Đại lộ Bình Dương (QL13), P. Thuận Giao, TP.HCM</b></div>
+      <div class="ov reveal d2"><small>Diện tích phát triển</small><b>7,9 ha (gồm 3 ha hạ tầng)</b></div>
+      <div class="ov reveal d3"><small>Cảnh quan</small><b>2,5 ha · mật độ xây dựng 20%</b></div>
+      <div class="ov reveal"><small>Quy mô</small><b>6 tòa tháp · 19 tầng · 1 tầng hầm</b></div>
+      <div class="ov reveal d1"><small>Sản phẩm</small><b>1.286 căn: Studio, 1PN+, 2PN, 2PN+, 3PN, Garden, Duplex · Shop</b></div>
+      <div class="ov reveal d2"><small>Bàn giao (dự kiến)</small><b>Q3/2029 · hoàn thiện cơ bản</b></div>
+      <div class="ov reveal d3"><small>Pháp lý</small><b>Chủ trương đầu tư · GCN QSDĐ · QH 1/500 · GPXD (được miễn)</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="section dark" id="noi-bat">
+  <div class="container">
+    <span class="eyebrow">Điểm nổi bật</span>
+    <h2 class="reveal">Vì sao chọn Norton Park</h2>
+    <div class="usp">
+      <div class="reveal"><i>🏗️</i><b>Gamuda Land</b><span>Nhà phát triển Malaysia với 50 năm kinh nghiệm của tập đoàn mẹ Gamuda Berhad — chủ đầu tư Celadon City, Eaton Park.</span></div>
+      <div class="reveal d1"><i>🛍️</i><b>Liền kề AEON Mall</b><span>Đối diện sân golf Sông Bé, cạnh KCN VSIP 1 — trung tâm của cộng đồng chuyên gia đa quốc gia.</span></div>
+      <div class="reveal d2"><i>🌳</i><b>Mật độ chỉ 20%</b><span>2,5 ha cảnh quan rừng nhiệt đới đa tầng, rừng Miyawaki, thung lũng nội khu.</span></div>
+      <div class="reveal d3"><i>🚇</i><b>Đón đầu Metro</b><span>Đón đầu tuyến Metro số 2 kéo dài, kết nối Vành đai 3, Vành đai 4, Xa lộ Hà Nội.</span></div>
+      <div class="reveal"><i>📄</i><b>Pháp lý đầy đủ</b><span>Đã có chủ trương đầu tư, GCN quyền sử dụng đất và phê duyệt quy hoạch 1/500.</span></div>
+      <div class="reveal d1"><i>🏡</i><b>Sản phẩm đa dạng</b><span>Từ Studio đến 3PN, Garden Units có sân vườn riêng, Duplex và Garden Duplex số lượng giới hạn.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="thu-vien">
+  <div class="container section-head">
+    <div><span class="eyebrow">Phối cảnh dự án</span><h2 class="reveal">Kéo ngang để xem dự án</h2></div>
+    <div class="hs-nav"><button data-hs="#gal" data-dir="prev" aria-label="Trước">←</button><button data-hs="#gal" data-dir="next" aria-label="Sau">→</button></div>
+  </div>
+  <div class="hscroll" id="gal">
+    <figure><img data-lb="gal" src="assets/img/np-hero.jpg" alt="Toàn cảnh Norton Park lúc hoàng hôn"><figcaption>Toàn cảnh dự án</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-aerial.jpg" alt="Phối cảnh trên cao 6 tòa tháp" loading="lazy"><figcaption>Quy hoạch theo cụm tháp</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-street.jpg" alt="Trục đường chính giữa các tòa tháp" loading="lazy"><figcaption>Trục đường chính</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-podium.jpg" alt="Khối đế thương mại" loading="lazy"><figcaption>Khối đế thương mại</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-entrance.jpg" alt="Điểm nhấn lối vào" loading="lazy"><figcaption>Điểm nhấn lối vào</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-gate.jpg" alt="Đại lộ nội khu" loading="lazy"><figcaption>Đại lộ nội khu</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-shop.jpg" alt="Shop thương mại khối đế" loading="lazy"><figcaption>Shop khối đế</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-shopstreet.jpg" alt="Phố thương mại" loading="lazy"><figcaption>Phố thương mại</figcaption></figure>
+    <figure><img data-lb="gal" src="assets/img/np-family.jpg" alt="Không gian xanh cho gia đình" loading="lazy"><figcaption>Không gian xanh</figcaption></figure>
+  </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax">
+  <img src="assets/img/np-aerial.jpg" alt="">
+  <div class="container reveal">
+    <span class="eyebrow">Forestscape</span>
+    <h2>Một chốn nghỉ dưỡng giữa thiên nhiên,<br>ngay trong lòng đô thị</h2>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="vi-tri">
+  <div class="container loc-grid">
+    <div>
+      <span class="eyebrow">Vị trí không thể tái lập</span>
+      <h2 class="reveal">Tâm điểm Đông Bắc TP.HCM</h2>
+      <ul class="loc-list reveal d1">
+        <li><span>AEON Mall Thuận Giao</span><b>Liền kề</b></li>
+        <li><span>Sân golf Sông Bé (Golf Resort)</span><b>Đối diện</b></li>
+        <li><span>Khu công nghiệp VSIP 1</span><b>Kế cận</b></li>
+        <li><span>Tuyến Metro số 2 (kéo dài)</span><b>Đón đầu</b></li>
+      </ul>
+      <div class="time-list reveal d2">
+        <div><b>5–10<small>phút</small></b><span>KCN VSIP 1 · Bệnh viện Columbia Asia · Lotte Mart</span></div>
+        <div><b>10–15<small>phút</small></b><span>UBND P. Thuận Giao · Mega Market · Nút giao Bình Chuẩn · BV Quốc tế Hạnh Phúc</span></div>
+        <div><b>20–25<small>phút</small></b><span>ĐH Thủ Dầu Một · ĐH Bình Dương · Cầu vượt Gò Dưa, Sóng Thần, Linh Xuân · Vành đai 3</span></div>
+        <div><b>40–50<small>phút</small></b><span>Đại lộ Phạm Văn Đồng · Xa lộ Hà Nội · Nút giao Tân Vạn · Vành đai 4 · Sân bay Tân Sơn Nhất · Chợ Bến Thành</span></div>
+      </div>
+    </div>
+    <div class="loc-imgs reveal d1">
+      <img data-lb="loc" src="assets/img/np-location.jpg" alt="Bản đồ vị trí và kết nối Norton Park" loading="lazy">
+      <img data-lb="loc" src="assets/img/np-masterplan.jpg" alt="Quy hoạch tổng thể" loading="lazy">
+      <img data-lb="loc" src="assets/img/np-aerial.jpg" alt="Phối cảnh tổng thể" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section" id="tien-ich" style="background:#eef0e8">
+  <div class="container">
+    <span class="eyebrow">Tiện ích</span>
+    <h2 class="reveal">Không chỉ nhiều tiện ích hơn,<br>mà nhiều phong cách sống hơn</h2>
+    <p class="lead reveal d1">Cảnh quan lấy cảm hứng từ cấu trúc phân tầng của rừng nhiệt đới — mỗi phân khu là một tầng rừng với tiện ích riêng.</p>
+    <div class="zones">
+      <div class="zone reveal"><img data-lb="am" src="assets/img/np-lawn.jpg" alt="Rừng Sương Mai" loading="lazy"><div><h3>Rừng Sương Mai</h3><ul><li>Rừng Miyawaki, đường dạo rừng</li><li>Bãi cỏ mở & khán đài ngoài trời</li><li>Sân tập golf (putting green)</li><li>Skate park, cầu treo, sân chơi mê cung nước</li><li>BBQ trong rừng, vườn chữa lành, sàn yoga</li></ul></div></div>
+      <div class="zone reveal d1"><img data-lb="am" src="assets/img/np-pool.jpg" alt="Rừng Nhịp Điệu" loading="lazy"><div><h3>Rừng Nhịp Điệu</h3><ul><li>Hồ bơi chính 210 m² & hồ bơi trẻ em</li><li>Sàn sinh hoạt gia đình</li><li>Sân chơi trẻ em, trạm thể dục</li><li>Bãi cỏ thú cưng, sân thể thao</li><li>Thung lũng nội khu, giếng trời</li></ul></div></div>
+      <div class="zone reveal d2"><img data-lb="am" src="assets/img/np-garden.jpg" alt="Tiện ích trong nhà" loading="lazy"><div><h3>Tiện ích trong nhà</h3><ul><li>Phòng gym, yoga, pilates</li><li>Work hub, phòng học</li><li>Montessori Lab, nhà trẻ</li><li>Karaoke, phòng giải trí</li><li>Sảnh cộng đồng</li></ul></div></div>
+    </div>
+  </div>
+  <div class="marquee" style="margin-top:40px">
+    <div class="marquee-track">
+      <img data-lb="am2" src="assets/img/np-pool.jpg" alt="Hồ bơi" loading="lazy">
+      <img data-lb="am2" src="assets/img/np-skate.jpg" alt="Skate park" loading="lazy">
+      <img data-lb="am2" src="assets/img/np-play.jpg" alt="Sân chơi trẻ em" loading="lazy">
+      <img data-lb="am2" src="assets/img/np-bbq.jpg" alt="BBQ trong rừng" loading="lazy">
+      <img data-lb="am2" src="assets/img/np-park.jpg" alt="Bãi cỏ & khán đài" loading="lazy">
+      <img data-lb="am2" src="assets/img/np-garden.jpg" alt="Vườn nội khu" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="san-pham">
+  <div class="container">
+    <span class="eyebrow">Sản phẩm căn hộ · Phân khu B</span>
+    <h2 class="reveal">Từ Studio đến Duplex</h2>
+    <table class="units reveal d1">
+      <tr><th>Loại căn</th><th>Diện tích sàn</th><th>Diện tích sử dụng</th></tr>
+      <tr><td>Studio (1PN, 1WC)</td><td>≈ 42 m²</td><td>≈ 38 m²</td></tr>
+      <tr><td>1PN+ (1PN, 1WC)</td><td>50 – 51 m²</td><td>46 – 47 m²</td></tr>
+      <tr><td>2PN (2PN, 2WC)</td><td>66 – 79 m²</td><td>61 – 72 m²</td></tr>
+      <tr><td>2PN+ (2WC)</td><td>≈ 87 m²</td><td>≈ 80 m²</td></tr>
+      <tr><td>3PN (2WC)</td><td>95 – 114 m²</td><td>89 – 107 m²</td></tr>
+      <tr><td>Garden Units · Duplex · Garden Duplex</td><td colspan="2">Bộ sưu tập giới hạn — sân vườn riêng 18 – 73 m²</td></tr>
+    </table>
+    <div class="tabs" data-group="plan" style="margin-top:34px">
+      <button class="active" data-tab="pl-st">Studio</button>
+      <button data-tab="pl-1">1PN+</button>
+      <button data-tab="pl-2">2PN</button>
+      <button data-tab="pl-2p">2PN+</button>
+      <button data-tab="pl-3">3PN</button>
+      <button data-tab="pl-g">Garden Unit</button>
+      <button data-tab="pl-d">Duplex</button>
+    </div>
+    <div class="plan active wide" id="pl-st" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-studio.jpg" alt="Mặt bằng Studio ST1.1a" loading="lazy"></div>
+    <div class="plan wide" id="pl-1" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-1br.jpg" alt="Mặt bằng 1PN+ A1.1a" loading="lazy"></div>
+    <div class="plan wide" id="pl-2" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-2br.jpg" alt="Mặt bằng 2PN B1.3a" loading="lazy"></div>
+    <div class="plan wide" id="pl-2p" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-2brp.jpg" alt="Mặt bằng 2PN+ B2.2a" loading="lazy"></div>
+    <div class="plan wide" id="pl-3" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-3br.jpg" alt="Mặt bằng 3PN C1.1a" loading="lazy"></div>
+    <div class="plan wide" id="pl-g" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-garden-unit.jpg" alt="Garden Unit B1.3c.PES" loading="lazy"></div>
+    <div class="plan wide" id="pl-d" style="grid-template-columns:1fr"><img data-lb="plan" src="assets/img/np-duplex.jpg" alt="Duplex D2.1c" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="section dark" id="thanh-toan">
+  <div class="container">
+    <span class="eyebrow">Phương thức thanh toán</span>
+    <h2 class="reveal">5 phương thức linh hoạt</h2>
+    <p class="lead reveal d1">Chọn theo dòng tiền: thanh toán chuẩn, giãn nhẹ, thanh toán nhanh để có giá tốt nhất, hoặc vay ngân hàng với chủ đầu tư hỗ trợ lãi suất.</p>
+    <div class="usp">
+      <div class="reveal"><i>⚡</i><b>Thanh toán nhanh</b><span>Giá hợp đồng thấp nhất trong các phương thức.</span></div>
+      <div class="reveal d1"><i>🏦</i><b>Ngân hàng hỗ trợ</b><span>Chỉ khoảng 10% vốn tự có trước bàn giao; ngân hàng giải ngân theo đợt, CĐT hỗ trợ lãi tối đa 10%/năm trong 24 tháng.</span></div>
+      <div class="reveal d2"><i>📅</i><b>Giãn tiến độ</b><span>Các phương án 10% ký HĐMB, chia nhỏ các đợt — phù hợp người mua ở.</span></div>
+    </div>
+    <p style="opacity:.6;font-size:.85rem;margin-top:22px">Ví dụ tham khảo căn 2PN ≈ 77 m²: giá HĐMB khoảng 5,0 – 5,5 tỷ tùy phương thức (chưa VAT, sau chiết khấu, theo tài liệu sự kiện 11/2026). Liên hệ để nhận bảng giá và chính sách mới nhất.</p>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="section" id="tinh-vay">
+  <div class="container">
+    <span class="eyebrow">Công cụ</span>
+    <h2 class="reveal">Tính nhanh khoản vay</h2>
+    <p class="lead reveal d1" style="margin-bottom:30px">Số liệu tạm tính để tham khảo, chưa gồm hỗ trợ lãi suất của chủ đầu tư.</p>
+    <div class="calc reveal" id="calc" data-first="10">
+      <div class="calc-in">
+        <label><span>Giá căn hộ <output id="o-price"></output></span><input id="c-price" type="range" min="2.5" max="9" step="0.1" value="5"></label>
+        <label><span>Tỷ lệ vay <output id="o-loan"></output></span><input id="c-loan" type="range" min="0" max="70" step="5" value="60"></label>
+        <label><span>Thời gian vay <output id="o-years"></output></span><input id="c-years" type="range" min="5" max="25" step="1" value="20"></label>
+        <label><span>Lãi suất <output id="o-rate"></output></span><input id="c-rate" type="range" min="5" max="12" step="0.1" value="8.5"></label>
+      </div>
+      <div class="calc-out">
+        <div class="row"><span>Giá căn tạm tính</span><b id="r-price"></b></div>
+        <div class="row"><span>Vốn tự có trước bàn giao (≈10%)</span><b id="r-first"></b></div>
+        <div class="row"><span>Tổng vốn tự có</span><b id="r-own"></b></div>
+        <div class="row"><span>Khoản vay ngân hàng</span><b id="r-loan"></b></div>
+        <div><small>Trả góp mỗi tháng (gốc + lãi)</small><div class="big" id="r-pmt"></div><small>Lãi suất thực tế tùy ngân hàng và thời điểm.</small></div>
+        <a href="dang-ky.html?du-an=norton" class="btn btn-gold" style="justify-self:start">Nhận phương án tài chính chi tiết</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="lien-he">
+  <div class="container contact">
+    <div>
+      <span class="eyebrow">Nhận thông tin</span>
+      <h2 class="reveal">Bảng giá, chính sách<br>& lịch tham quan nhà mẫu</h2>
+      <p class="lead reveal d1">Để lại số điện thoại — tôi gửi bảng giá theo từng loại căn, so sánh 5 phương thức thanh toán và hẹn lịch xem nhà mẫu Norton Park.</p>
+      <div class="agent-line reveal d2">
+        <span class="brand-mark"></span>
+        <div><b data-agent="name"></b><a data-tel style="color:var(--gold-2);font-weight:700">☎ <span data-agent="phoneDisplay"></span></a><br><a data-zalo style="opacity:.85">Zalo: <span data-agent="zaloDisplay"></span></a></div>
+      </div>
+    </div>
+    <form class="form reveal d1">
+      <h3>Đăng ký nhận thông tin Norton Park</h3>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <input type="hidden" name="project" value="Norton Park (Thuận Giao)">
+      <input type="text" name="name" placeholder="Họ và tên" required>
+      <input type="tel" name="phone" placeholder="Số điện thoại" required pattern="[0-9 +.]{9,15}">
+      <select name="unit">
+        <option>Quan tâm Studio / 1PN+</option><option>Quan tâm 2PN / 2PN+</option><option>Quan tâm 3PN</option><option>Quan tâm Garden / Duplex</option><option>Quan tâm Shop thương mại</option>
+      </select>
+      <select name="purpose">
+        <option>Mua để ở</option><option>Đầu tư cho thuê chuyên gia</option><option>Đặt lịch xem nhà mẫu</option>
+      </select>
+      <button class="btn btn-gold" type="submit">Gửi & nhận bảng giá →</button>
+      <div class="ok"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><b data-agent="name"></b> · <span data-agent="brand"></span><br><span data-agent="title"></span></div>
+    <div><b>Liên hệ</b><br>Gọi: <a data-tel data-agent="phoneDisplay"></a><br>Zalo: <a data-zalo data-agent="zaloDisplay"></a><br><a data-mail data-agent="email"></a></div>
+    <div><b>Dự án</b><br><a href="bcons-riverside.html">Bcons Riverside</a><br><a href="bcons-central-park.html">Bcons Central Park</a><br><a href="conic-boulevard.html">Conic Boulevard</a><br><a href="norton-park.html">Norton Park</a></div>
+    <p class="disc">© <span class="year"></span> <span data-agent="name"></span> – <span data-agent="brand"></span>, tư vấn độc lập. Hình ảnh là phối cảnh minh họa của chủ đầu tư Gamuda Land; thông tin, giá và chính sách có thể thay đổi theo chủ đầu tư và cơ quan có thẩm quyền.</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="zalo" data-zalo aria-label="Nhắn Zalo">Zalo</a>
+  <a class="call" data-tel aria-label="Gọi điện">☎</a>
+</div>
+
+<script src="assets/main.js?v=4"></script>
+</body>
+</html>

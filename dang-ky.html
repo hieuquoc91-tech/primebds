@@ -83,6 +83,7 @@
           <label><input type="radio" name="project" value="Bcons Riverside (Q.8)" checked><span>Bcons Riverside · Q.8</span></label>
           <label><input type="radio" name="project" value="Bcons Central Park (Biên Hòa)"><span>Bcons Central Park · Biên Hòa</span></label>
           <label><input type="radio" name="project" value="Conic Boulevard (Tân Nhựt)"><span>Conic Boulevard · sổ hồng</span></label>
+          <label><input type="radio" name="project" value="Norton Park (Thuận Giao)"><span>Norton Park · Gamuda Land</span></label>
           <label><input type="radio" name="project" value="Dự án khác"><span>Dự án khác</span></label>
           <label><input type="radio" name="project" value="Chưa chọn - cần tư vấn"><span>Cần tư vấn chọn</span></label>
         </div>
@@ -129,7 +130,7 @@
 <script>
   // Mở sẵn dự án theo link: dang-ky.html?du-an=central
   (function(){var q=new URLSearchParams(location.search).get("du-an")||"";
-    var map={riverside:0,central:1,conic:2};var i=map[q.toLowerCase()];
+    var map={riverside:0,central:1,conic:2,norton:3};var i=map[q.toLowerCase()];
     if(i!==undefined){document.querySelectorAll('#proj input')[i].checked=true;}})();
 </script>
 </body>
