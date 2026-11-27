@@ -10,6 +10,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css?v=5">
 <script src="assets/config.js?v=10"></script>
+<style>
+  /* Hero trang chủ: nền navy sắc nét + video dọc của Hiếu Quốc bên phải */
+  .hero-home{background:radial-gradient(900px 600px at 10% 85%,rgba(212,162,76,.18),transparent 60%),linear-gradient(135deg,#0b1f3a 0%,#0f2a4d 55%,#123459 100%)}
+  .hero-home .hero-media{position:absolute;top:0;right:0;bottom:0;width:min(42%,760px);overflow:hidden;background:#0b1f3a}
+  .hero-home .hero-media video{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
+  .hero-home .hero-media::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#0f2a4d 0%,rgba(15,42,77,.5) 18%,transparent 45%),linear-gradient(0deg,rgba(11,31,58,.45) 0%,transparent 30%)}
+  .hero-home .media-badge{position:absolute;z-index:2;right:24px;top:100px;padding:8px 14px;border-radius:999px;background:rgba(11,31,58,.75);backdrop-filter:blur(6px);border:1px solid rgba(240,201,119,.4);color:#fff;font-size:.82rem;font-weight:600}
+  .hero-home .container{position:relative;z-index:2}
+  .hero-home .container>*{max-width:620px}
+  @media (max-width:900px){
+    .hero-home{align-items:flex-end}
+    .hero-home .hero-media{width:100%}
+    .hero-home .hero-media::before{background:linear-gradient(180deg,rgba(11,31,58,.25) 0%,rgba(11,31,58,.45) 35%,#0b1f3a 80%)}
+    .hero-home .media-badge{right:auto;left:16px;top:96px}
+  }
+  @media (prefers-reduced-motion:reduce){.hero-home .hero-media video{display:none}.hero-home .hero-media{background:url(assets/img/hero-poster.jpg) center/cover}}
+</style>
 </head>
 <body>
 
@@ -35,8 +52,13 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"><img src="assets/img/flycam.jpg?v=8" alt="Toàn cảnh sông Sài Gòn khu Nam"></div>
+<section class="hero hero-home">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg" aria-label="Hiếu Quốc tại triển lãm Quy hoạch TP.HCM">
+      <source src="assets/video/hero-intro.mp4" type="video/mp4">
+    </video>
+    <span class="media-badge">● Đi thực tế cùng Hiếu Quốc</span>
+  </div>
   <div class="container">
     <span class="eyebrow reveal" data-agent="area"></span>
     <h1 class="reveal d1">An cư đúng nơi,<br><em>đầu tư đúng chỗ.</em></h1>
