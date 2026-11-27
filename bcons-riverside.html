@@ -35,6 +35,19 @@
   .subnav{position:sticky;top:76px;z-index:40;background:rgba(246,244,239,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .subnav .container{display:flex;gap:24px;overflow-x:auto;padding:14px 0;font-size:.9rem;font-weight:600;white-space:nowrap;scrollbar-width:none}
   .subnav a{color:var(--muted)}.subnav a:hover{color:var(--navy)}
+  .geo{margin-top:56px;display:grid;grid-template-columns:1.05fr 1fr;gap:22px;align-items:stretch}
+  .geo-canvas{position:relative;border-radius:var(--radius);overflow:hidden;background:radial-gradient(circle at 50% 52%,#1a3a66 0%,#0b1f3a 72%);min-height:440px;box-shadow:var(--shadow)}
+  .geo-canvas canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .geo-tag{position:absolute;left:18px;top:16px;color:var(--gold-2);font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+  .geo-side{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .geo-map{flex:1;min-height:320px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#e9e5dc}
+  .geo-map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+  .geo-coord{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+  .geo-coord code{font:600 1rem/1.3 ui-monospace,Consolas,monospace;color:var(--navy)}
+  .geo-coord small{color:var(--muted);display:block;font-size:.75rem}
+  .geo-btns{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}
+  .geo-btns .btn{padding:10px 16px;font-size:.88rem}
+  @media (max-width:900px){.geo{grid-template-columns:1fr;margin-top:40px}.geo-canvas{min-height:360px}.geo-btns{margin-left:0;width:100%}.geo-btns .btn{flex:1;justify-content:center}}
 </style>
 <script src="assets/config.js?v=10"></script>
 </head>
@@ -177,6 +190,24 @@
       <img data-lb="loc" src="assets/img/location-3.jpg?v=8" alt="Vị trí sát Võ Văn Kiệt" loading="lazy">
       <img data-lb="loc" src="assets/img/map.jpg?v=8" alt="Bản đồ khu vực" loading="lazy">
       <img data-lb="loc" src="assets/img/aerial-pin.jpg?v=8" alt="Dự án nhìn từ trên cao" loading="lazy">
+    </div>
+  </div>
+  <div class="container geo reveal" id="toa-do">
+    <div class="geo-canvas">
+      <canvas id="geoCanvas" role="img" aria-label="Sơ đồ vị trí Bcons Riverside, tọa độ 10.712460, 106.623312"></canvas>
+      <span class="geo-tag">◎ Tọa độ dự án</span>
+    </div>
+    <div class="geo-side">
+      <div class="geo-map">
+        <iframe src="https://maps.google.com/maps?q=10.712460,106.623312&amp;z=16&amp;hl=vi&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ Google vị trí Bcons Riverside"></iframe>
+      </div>
+      <div class="geo-coord">
+        <div><small>Vĩ độ · Kinh độ</small><code>10.712460° N, 106.623312° E</code></div>
+        <div class="geo-btns">
+          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=10.712460,106.623312" target="_blank" rel="noopener">➤ Chỉ đường</a>
+          <a class="btn btn-dark" href="https://maps.app.goo.gl/7vg6SwBXQmiFbDmd8" target="_blank" rel="noopener">Mở Google Maps</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -391,5 +422,6 @@
 </div>
 
 <script src="assets/main.js?v=5"></script>
+<script src="assets/geo-canvas.js?v=3"></script>
 </body>
 </html>
